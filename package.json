@@ -1,6 +1,6 @@
 {
-  "name": "cas",
-  "version": "0.0.5",
+  "name": "@noveogroup/cas",
+  "version": "1.0.0",
   "description": "Central Authentication Service (CAS) client for Node.js",
   "keywords": [
     "cas",
@@ -13,20 +13,25 @@
   "author": "Casey Banner <kcbanner@gmail.com>",
   "contributors": [
     {
+      "name": "Eugeny Vlasenko",
+      "email": "Eugeny.Vlasenko@noveogroup.com"
+    },
+    {
       "name": "Joshua Chan",
       "email": "joshua@appdevdesigns.net"
     }
   ],
   "dependencies": {
-    "cheerio": "0.19.0"
+    "cheerio": "^0.22.0"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
-    "nock": "^7.0.2",
-    "should": "^8.2.1"
+    "chai": "^4.0.2",
+    "expresso": "^0.9.2",
+    "nock": "^9.0.13",
+    "should": "^11.2.1"
   },
   "scripts": {
-    "test": "make test"
+    "test": "expresso -I lib"
   },
   "main": "index"
 }
