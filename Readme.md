@@ -14,14 +14,16 @@
 
 ## Installation
 
-Clone this project into `node_modules/cas` and then run `npm install` inside it.
+```bash
+$ npm i @noveogroup/cas
+```
 
 ## Usage
 
 Setup:
 
 ```javascript
-    var CAS = require('cas');
+    var CAS = require('@noveogroup/cas');
     var cas = new CAS({
         base_url: 'https://cas.uwaterloo.ca/cas', 
         service: 'my_service',
@@ -73,7 +75,7 @@ Longer example with CAS proxy (also see the [wiki](https://github.com/joshchan/n
     var http = require('http');
 
     // Initialize CAS
-    var CAS = require('cas');
+    var CAS = require('@noveogroup/cas');
     var cas = new CAS({
         base_url: 'https://cas.uwaterloo.ca/cas',
         version: 2.0,
